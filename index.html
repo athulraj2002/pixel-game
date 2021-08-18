@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Game</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="board">
+        <div id="game-over">
+            Game Over
+            <div>Total: <span id="totalPoint"></span></div>
+            <button onclick="reload()">Reload</button>
+        </div>
+        <div id="rules">
+           <h1>Rules</h1> 
+         <p>Collect Yellow pixels</p>
+         <p>Avoid Blue pixels</p>
+         <p>Use arrow keys to move</p>
+         <button onclick="start()">Start Game</button>
+        </div>
+        <div id="currentPoint"><span>Points:</span> <span id="totalPoints"></span></div>
+      <div id="snake"></div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
